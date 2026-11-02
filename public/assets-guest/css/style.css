@@ -4,7 +4,7 @@
   Author: Colorib
   Author URI: https://www.colorib.com/
   Version: 1.0
-  Created: Colorib 
+  Created: Colorib
 ******************************************************************/
 
 /*------------------------------------------------------------------
@@ -869,6 +869,111 @@ ol {
 	margin-bottom: 0;
 }
 
+/* Perapian kategori Navelle */
+.categories {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #f3f2ee;
+}
+
+.categories .section-title {
+    margin-bottom: 40px;
+}
+
+.categories .row {
+    justify-content: center;
+}
+
+.categories .categories__text {
+    background: #ffffff;
+    padding: 25px 15px;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.categories .categories__text:before {
+    display: none;
+}
+
+.categories .categories__text h3 {
+    color: #fa18b2;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Jarak antar kategori */
+.categories .col-lg-4 {
+    margin-bottom: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 767px) {
+    .categories {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .categories .section-title h2 {
+        font-size: 28px;
+    }
+
+    .categories .categories__text {
+        min-height: 90px;
+    }
+}
+
+/* Merapikan posisi produk Navelle */
+.product__filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product__item {
+    margin-bottom: 35px;
+}
+
+.product__item__pic {
+    height: 280px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.product__item__text {
+    padding-top: 18px;
+}
+
+.product__item__text span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.product__item__text h6 {
+    margin-bottom: 7px;
+}
+
+.product__item__text h5 {
+    margin-bottom: 5px;
+}
+/* Agar nama produk tetap terlihat */
+.product__item:hover .product__item__text h6 {
+    opacity: 1;
+}
+
+/* Menjaga posisi informasi produk */
+.product__item__text h6 {
+    visibility: visible;
+}
+.product__item__text p {
+    margin-bottom: 0;
+}
+
 /*---------------------
   Instagram
 -----------------------*/
@@ -908,8 +1013,8 @@ ol {
 -----------------------*/
 
 .product {
-	padding-top: 0;
-	padding-bottom: 60px;
+    background: #fff;
+    padding: 75px 0;
 }
 
 .filter__controls {
@@ -3848,4 +3953,327 @@ ol {
 	.categories__text:before {
 		height: 250px;
 	}
+}
+
+/* NAVELLE - PINK THEME */
+
+/* Warna tombol utama */
+.primary-btn,
+.site-btn {
+    background: #e9a3bd;
+    color: #ffffff;
+    border: none;
+}
+
+.primary-btn:hover,
+.site-btn:hover {
+    background: #d982a5;
+    color: #ffffff;
+}
+
+/* Warna harga dan aksen */
+.product__item__text h5,
+.cart__total ul li span,
+.checkout__total__all li span,
+.blog__details__quote h6 {
+    color: #df8eae;
+}
+
+/* Keranjang */
+.cart__total,
+.checkout__order {
+    background: #fff5f8;
+}
+
+.shopping__cart__table table tbody tr {
+    border-bottom: 1px solid #f4e3ea;
+}
+
+/* Kupon checkout */
+.coupon__code {
+    border-top-color: #e9a3bd;
+    background: #fff5f8;
+}
+
+/* Checkbox checkout */
+.checkout__input__checkbox label input:checked ~ .checkmark {
+    border-color: #df8eae;
+}
+
+.checkout__input__checkbox label input:checked ~ .checkmark:after {
+    border-color: #df8eae;
+}
+
+/* Blog */
+.blog__item:hover a::after {
+    background: #df8eae;
+}
+
+/* Tombol dan ikon */
+.cart__close i {
+    background: #fff0f5;
+}
+
+
+/* NAVELLE - PERBAIKAN TAMPILAN PRODUK */
+
+.product .section-title {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.product .section-title span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product .section-title h2 {
+    margin-bottom: 18px;
+}
+
+.product .section-title p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.product .product__item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product .product__item__pic {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product .product__item__text {
+    padding-top: 15px;
+    text-align: left;
+}
+
+.product .product__item__text h6 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.product .product__item__text h5 {
+    color: #df8eae;
+    font-weight: 700;
+}
+
+.product .product__item__text p {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* NAVELLE COLLECTION SECTION */
+.navelle-collection-section {
+    padding: 70px 0;
+    background: #fff8fa;
+}
+
+.navelle-collection-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.navelle-collection-heading span {
+    color: #df8eae;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.navelle-collection-heading h2 {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.navelle-collection-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+.navelle-collection-card {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navelle-collection-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    background-color: #ffffff;
+}
+
+.collection-info {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.collection-info h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.collection-info p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+/* =================================
+   NAVELLE - OUR LATEST COLLECTION
+================================= */
+
+.product__item {
+    overflow: hidden;
+    margin-bottom: 35px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.product__item:hover {
+    transform: translateY(-5px);
+}
+
+/* Area foto produk */
+.product__item__pic {
+    height: 300px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff9fb;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Tombol wishlist */
+.product__item__pic .product__hover {
+    right: 12px;
+    top: 12px;
+}
+
+.product__item__pic .product__hover li img {
+    background: #ffffff;
+    padding: 9px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(220, 140, 165, 0.15);
+}
+
+/* Informasi produk */
+.product__item__text {
+    padding: 16px 5px 5px;
+    position: relative;
+}
+
+/* Kategori produk */
+.product__item__text span {
+    display: block;
+    color: #c9829b;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+/* Nama produk */
+.product__item__text h6 {
+    color: #393036;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    transition: none;
+}
+
+/* Harga produk */
+.product__item__text h5 {
+    color: #d77f9e;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+/* Stok produk */
+.product__item__text p {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+/* Efek hover */
+.product__item:hover .product__item__text h6 {
+    opacity: 1;
+}
+
+/* Label produk */
+.product__item__pic .label {
+    color: #ffffff;
+    background: #d98ba6;
+    border-radius: 0 0 8px 0;
+    letter-spacing: 1px;
+}
+
+
+/* Tombol produk Navelle */
+.navelle-product-actions {
+    display: flex;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.navelle-product-actions a,
+.navelle-product-actions button {
+    flex: 1;
+    text-align: center;
+    padding: 9px 5px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navelle-btn-detail {
+    color: #d77f9e;
+    border: 1px solid #d77f9e;
+    background: #fff;
+}
+
+.navelle-btn-detail:hover {
+    color: #fff;
+    background: #d77f9e;
+}
+
+.navelle-btn-cart {
+    width: 100%;
+    color: #fff;
+    border: 1px solid #d77f9e;
+    background: #d77f9e;
+}
+
+.navelle-btn-cart:hover {
+    color: #fff;
+    background: #c66d8d;
+}
+
+.navelle-btn-cart:disabled {
+    background: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
 }
